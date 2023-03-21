@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".RighttoEquality1">
 
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -38,18 +39,18 @@
 
     <Button
         android:id="@+id/jano"
-        android:layout_width="150dp"
-        android:layout_height="49dp"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="12dp"
-        android:background="#3D737A"
+        android:background="#3C1407"
         android:marqueeRepeatLimit="marquee_forever"
         android:paddingLeft="20dp"
         android:scrollbarSize="8dp"
         android:text="Know More!"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="20sp"
-        app:backgroundTint="#0E2D37"
+
+        android:textSize="15dp"
+        app:backgroundTint="#1C4A59"
         app:iconPadding="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
