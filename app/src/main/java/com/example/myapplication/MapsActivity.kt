@@ -92,6 +92,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         }
     }
 
+    @SuppressLint("MissingPermission")
     override fun onMapReady(googleMap: GoogleMap) {
         map = googleMap
 
@@ -102,6 +103,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         }
     }
 
+    @SuppressLint("MissingPermission")
     private fun getCurrentLocation() {
         // Get the user's last known location
         fusedLocationClient.lastLocation.addOnSuccessListener { location ->
@@ -116,13 +118,14 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         }
     }
 
+    @SuppressLint("MissingPermission")
     private fun getNearbyLawyers(latLng: LatLng) {
         val placesClient = Places.createClient(this)
         val request = FindCurrentPlaceRequest.builder(listOf(Place.Field.NAME, Place.Field.ADDRESS, Place.Field.LAT_LNG))
             .build()
         placesClient.findCurrentPlace(request).addOnSuccessListener { response ->
             for (placeLikelihood in response.placeLikelihoods) {
-                if (placeLikelihood.place.types.contains(Place.TYPE_LAWYER)) {
+//                if (placeLikelihood.place.types?.contains(Place.Type_School) == true) {
                     // Add a marker for each nearby lawyer
                     val lawyerLatLng = placeLikelihood.place.latLng
                     if (lawyerLatLng != null) {
@@ -132,7 +135,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             }
         }
     }
-}
+
 
 
 

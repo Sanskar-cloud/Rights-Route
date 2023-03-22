@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content" >
 
                 <Button
-                    android:id="@+id/buttonhvd"
+                    android:id="@+id/htf"
                     android:layout_width="200dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="105dp"

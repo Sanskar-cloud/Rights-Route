@@ -12,6 +12,13 @@ class HabesCorpus : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_habes_corpus)
 
+        val button = findViewById<Button>(R.id.htf)
+        button.setOnClickListener{
+            val intent = Intent(this, hvedio::class.java)
+            startActivity(intent)
+        }
+
+
 
     }
 }

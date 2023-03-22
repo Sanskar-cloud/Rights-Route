@@ -8,7 +8,7 @@
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card1"
+        android:id="@+id/cardis1"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:layout_margin="8dp"
@@ -33,7 +33,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card2"
+        android:id="@+id/cardis2"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:layout_margin="8dp"
@@ -56,7 +56,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card3"
+        android:id="@+id/cardis3"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:layout_margin="8dp"
@@ -78,7 +78,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card4"
+        android:id="@+id/cardis4"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:layout_margin="8dp"
@@ -100,7 +100,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card5"
+        android:id="@+id/cardis5"
         android:layout_width="match_parent"
         android:layout_height="89dp"
         android:layout_margin="8dp"

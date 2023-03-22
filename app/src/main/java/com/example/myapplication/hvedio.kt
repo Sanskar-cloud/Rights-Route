@@ -14,10 +14,7 @@ class hvedio : AppCompatActivity() {
 
         val videoView1 = findViewById<VideoView>(R.id.video_view_1)
 
-        val youtubeVideoUrl1 = "https://www.youtube.com/watch?v=K2sFjCEYMB0&t"
-        videoView1.setVideoURI(Uri.parse(youtubeVideoUrl1))
-
-
+        videoView1.setVideoURI(Uri.parse("https://www.youtube.com/watch?v=K2sFjCEYMB0"))
 
         val mediaController = MediaController(this)
         mediaController.setAnchorView(videoView1)
