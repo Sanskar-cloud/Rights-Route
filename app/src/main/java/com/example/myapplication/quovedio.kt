@@ -6,15 +6,15 @@ import android.os.Bundle
 import android.widget.MediaController
 import android.widget.VideoView
 
-class Mandveedio : AppCompatActivity() {
+class quovedio : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_hvedio)
+        setContentView(R.layout.activity_quovedio)
 
 
         val videoView = findViewById<VideoView>(R.id.video_view_1)
 
-        val youtubeVideoUrl = "https://www.youtube.com/watch?v=XZxLXBvbpIs"
+        val youtubeVideoUrl = "https://www.youtube.com/watch?v=HIhJtSdXKJY"
         videoView.setVideoURI(Uri.parse(youtubeVideoUrl))
 
 
@@ -24,19 +24,6 @@ class Mandveedio : AppCompatActivity() {
         videoView.setMediaController(mediaController)
 
         videoView.start()
-
-        val videoView2 = findViewById<VideoView>(R.id.video_view_2)
-
-        val youtubeVideoUrl2 = "https://www.youtube.com/watch?v=CrFrBKYbRdY"
-        videoView2.setVideoURI(Uri.parse(youtubeVideoUrl2))
-
-
-
-        val mediaController2 = MediaController(this)
-        mediaController2.setAnchorView(videoView)
-        videoView2.setMediaController(mediaController)
-
-        videoView2.start()
 
 
 

@@ -6,28 +6,28 @@ import android.os.Bundle
 import android.widget.MediaController
 import android.widget.VideoView
 
-class hvedio : AppCompatActivity() {
+class provedio : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_hvedio)
+        setContentView(R.layout.activity_provedio)
 
+        val videoView = findViewById<VideoView>(R.id.video_view_1)
 
-        val videoView1 = findViewById<VideoView>(R.id.video_view_1)
-
-        val youtubeVideoUrl1 = "https://www.youtube.com/watch?v=K2sFjCEYMB0&t"
-        videoView1.setVideoURI(Uri.parse(youtubeVideoUrl1))
+        val youtubeVideoUrl = "https://www.youtube.com/watch?v=xoUHuYNzHnI"
+        videoView.setVideoURI(Uri.parse(youtubeVideoUrl))
 
 
 
         val mediaController = MediaController(this)
-        mediaController.setAnchorView(videoView1)
-        videoView1.setMediaController(mediaController)
+        mediaController.setAnchorView(videoView)
+        videoView.setMediaController(mediaController)
 
-        videoView1.start()
+        videoView.start()
+
 
         val videoView2 = findViewById<VideoView>(R.id.video_view_2)
 
-        val youtubeVideoUrl2 = "https://www.youtube.com/watch?v=duxLMyipJ9c&t"
+        val youtubeVideoUrl2 = "https://www.youtube.com/watch?v=YB4Zq92D9Fo"
         videoView2.setVideoURI(Uri.parse(youtubeVideoUrl2))
 
 
@@ -37,8 +37,5 @@ class hvedio : AppCompatActivity() {
         videoView2.setMediaController(mediaController)
 
         videoView2.start()
-
-
-
     }
 }

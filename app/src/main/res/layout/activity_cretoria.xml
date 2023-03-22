@@ -3,7 +3,87 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".cretoria">
+    android:layout_height="match_parent">
 
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="-27dp"
+        tools:layout_editor_absoluteY="-145dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="59dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:text="1. Habeas Corpus"
+            android:textColor="#769FC3"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="78dp"
+            android:layout_marginRight="5dp"
+            android:text="This is the most powerful and most often used writ. For example, if a person is wrongfully held by the government, that person, or his family or friends, can file a writ of Habeas Corpus to have that person released. When this writ is used, the Supreme Court or the High Court interrogates the State about the reasons for the individual’s detention.This writ is crucial since it determines a person’s right to freedom and personal liberty.This writ cannot be used in the following four situations:   Detention is legal; Disobedience to the Court; The Court has no jurisdiction over detention; A Competent Court is in charge of detention."
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/buttonhvd"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="105dp"
+                    android:layout_marginTop="587dp"
+                    android:background="#858E97"
+
+                    android:text="How To File?"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
