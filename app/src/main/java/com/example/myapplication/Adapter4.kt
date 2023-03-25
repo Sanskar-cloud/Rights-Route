@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+
 @Suppress("DEPRECATION")
 internal class Adapter4(
     var context: Context,
@@ -14,16 +15,10 @@ internal class Adapter4(
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> {
-                A25()
+                A29()
             }
             1 -> {
-                A26()
-            }
-            1 -> {
-                A27()
-            }
-            1 -> {
-                A28()
+                A30()
             }
 
 

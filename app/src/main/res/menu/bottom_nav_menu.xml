@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/vote"
+        android:icon="@drawable/ic_baseline_vote_24"
+        android:title="Vote"/>
+
+    <item
+        android:id="@+id/violation"
+        android:icon="@drawable/ic_baseline_violation_24"
+        android:title="Voilation"/>
+    <item
+        android:id="@+id/location"
+        android:icon="@drawable/ic_baseline_location_24"
+        android:title="Map"/>
+
+
+
+</menu>

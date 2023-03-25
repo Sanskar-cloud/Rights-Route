@@ -72,9 +72,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         // Get the user's location
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
-            != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
-                LOCATION_PERMISSION_REQUEST_CODE)
+            != PackageManager.PERMISSION_GRANTED
+        ) {
+            ActivityCompat.requestPermissions(
+                this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
+                LOCATION_PERMISSION_REQUEST_CODE
+            )
         } else {
             getCurrentLocation()
         }
@@ -84,10 +87,15 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mapFragment.getMapAsync(this)
     }
 
-    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (requestCode == LOCATION_PERMISSION_REQUEST_CODE && grantResults.isNotEmpty() &&
-            grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            grantResults[0] == PackageManager.PERMISSION_GRANTED
+        ) {
             getCurrentLocation()
         }
     }
@@ -98,7 +106,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         // Enable the user's location on the map
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
-            == PackageManager.PERMISSION_GRANTED) {
+            == PackageManager.PERMISSION_GRANTED
+        ) {
             map.isMyLocationEnabled = true
         }
     }
@@ -121,20 +130,29 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     @SuppressLint("MissingPermission")
     private fun getNearbyLawyers(latLng: LatLng) {
         val placesClient = Places.createClient(this)
-        val request = FindCurrentPlaceRequest.builder(listOf(Place.Field.NAME, Place.Field.ADDRESS, Place.Field.LAT_LNG))
+        val request = FindCurrentPlaceRequest.builder(
+            listOf(
+                Place.Field.NAME,
+                Place.Field.ADDRESS,
+                Place.Field.LAT_LNG
+            )
+        )
             .build()
         placesClient.findCurrentPlace(request).addOnSuccessListener { response ->
             for (placeLikelihood in response.placeLikelihoods) {
-//                if (placeLikelihood.place.types?.contains(Place.Type_School) == true) {
+                if (placeLikelihood.place.types?.contains(Place.Type.RESTAURANT) == true) {
                     // Add a marker for each nearby lawyer
                     val lawyerLatLng = placeLikelihood.place.latLng
                     if (lawyerLatLng != null) {
-                        map.addMarker(MarkerOptions().position(lawyerLatLng).title(placeLikelihood.place.name))
+                        map.addMarker(
+                            MarkerOptions().position(lawyerLatLng).title(placeLikelihood.place.name)
+                        )
                     }
                 }
             }
         }
     }
+}
 
 
 
