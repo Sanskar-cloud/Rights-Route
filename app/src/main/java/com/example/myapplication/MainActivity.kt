@@ -33,6 +33,12 @@ class MainActivity : AppCompatActivity() {
                     overridePendingTransition(0, 0)
                     true
                 }
+                R.id.news -> {
+                    startActivity(Intent(applicationContext, news::class.java))
+                    overridePendingTransition(0, 0)
+                    true
+
+                }
                 else -> false
             }
         }
@@ -79,15 +85,30 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
+
+        val signOutItem = menu?.findItem(R.id.action_search)
+        signOutItem?.setOnMenuItemClickListener {
+            FirebaseAuth.getInstance().signOut()
+            true
+        }
+
+
         return true
     }
 
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+
+
         when (item.itemId) {
-            R.id.action_search -> {
-                FirebaseAuth.getInstance().signOut()
+
+            R.id.action_settings -> {
+                val intent = Intent(this, EditProfilePage::class.java)
+                startActivity(intent)
                 return true
+
+
             }
             else -> return super.onOptionsItemSelected(item)
         }

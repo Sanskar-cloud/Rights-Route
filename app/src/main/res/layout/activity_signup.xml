@@ -82,37 +82,65 @@
                 android:padding="8dp"
                 android:textColorHint="#603a91" />
 
-            <EditText
-                android:id="@+id/editTextTextpassword2"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/oldpass"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="32dp"
-                android:background="@drawable/edittext"
-                android:drawableStart="@drawable/password"
-                android:drawablePadding="16dp"
-                android:ems="10"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:padding="8dp"
-                android:textColorHint="#603a91" />
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:passwordToggleEnabled="true">
 
-            <EditText
-                android:id="@+id/editTextRepassword"
+                <EditText
+                    android:id="@+id/editTextTextpassword2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/edittext"
+                    android:drawableStart="@drawable/password"
+                    android:drawablePadding="16dp"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColorHint="#603a91"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/oldpass2"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/edittext"
-                android:drawableStart="@drawable/password"
-                android:textColorHint="#603a91"
-                android:ems="10"
-                android:inputType="textPassword"
-                android:hint="Re-Password"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="32dp"
-                android:padding="8dp"
-                android:drawablePadding="16dp"/>
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:passwordToggleEnabled="true">
+
+
+                <EditText
+                    android:id="@+id/editTextRepassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/edittext"
+                    android:drawableStart="@drawable/password"
+                    android:drawablePadding="16dp"
+                    android:ems="10"
+                    android:hint="@string/ConfirmPassword2"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColorHint="#603a91"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
 
             <ImageView
                 android:id="@+id/imageView6"

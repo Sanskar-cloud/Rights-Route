@@ -58,6 +58,45 @@ class login : AppCompatActivity() {
 
                 }
             }
+            binding.textView4.setOnClickListener {
+                val email = binding.editTextTextPersonName.text.toString()
+                if(email.isEmpty()){
+                    Toast.makeText(
+                        this,
+                        "Email is Required.",
+                        Toast.LENGTH_SHORT
+                    ).show()
+
+                }
+                firebaseAuth.sendPasswordResetEmail(email)
+                    .addOnCompleteListener { task ->
+                        if(email.isNotEmpty()){
+
+                            if (task.isSuccessful) {
+                                // Step 5: Display success message to user
+                                Toast.makeText(
+                                    this,
+                                    "Password reset email has been sent.",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            } else {
+                                // Step 5: Display error message to user
+                                Toast.makeText(
+                                    this,
+                                    "Failed to send password reset email.",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                                // Step 4: Handle result of password reset email request
+                            }
+                        }
+                        else{
+                            Toast.makeText(this,"Email is Required",Toast.LENGTH_SHORT).show()
+                        }
+                    }
+            }
+
+
+
         }
 
         override fun onStart() {

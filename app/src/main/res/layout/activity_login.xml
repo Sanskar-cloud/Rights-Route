@@ -69,22 +69,43 @@
                 android:padding="8dp"
                 android:textColorHint="#603a91" />
 
-            <EditText
-                android:id="@+id/editTextTextpassword"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/oldpass"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="32dp"
-                android:background="@drawable/edittext"
-                android:drawableStart="@drawable/password"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:passwordToggleEnabled="true">
 
-                android:drawablePadding="16dp"
-                android:ems="10"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:padding="8dp"
-                android:textColorHint="#603a91" />
+                <EditText
+                    android:id="@+id/editTextTextpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/edittext"
+                    android:drawableStart="@drawable/password"
+
+                    android:drawablePadding="16dp"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColorHint="#603a91" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="10dp"
+                android:text="Forgot Password?"
+                android:textColor="#5E35B1"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageView6"
