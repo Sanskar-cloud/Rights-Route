@@ -12,6 +12,6 @@ class A15 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_basketball, container, false)
+        return inflater.inflate(R.layout.fragment_s15, container, false)
     }
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vintage2">
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Article 16"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="\t•	Men and women of full age, without any limitation due to race, nationality, or religion, have the right to marry and to found a family.\n\n
+\t•	They are entitled to equal rights as to marriage, during marriage, and at its dissolution.\n\n
+\t•	Marriage shall be entered into only with the free and full consent of the intending spouses.\n\n
+\t•	The family is the natural and fundamental group unit of society and is entitled to protection by society and the State.\n\n
+\t•	No one shall be subjected to arbitrary interference with their family, home, or correspondence, nor to attacks upon their honor and reputation.\n\n
+
+"
+        android:textSize="19sp"/>
+</FrameLayout>

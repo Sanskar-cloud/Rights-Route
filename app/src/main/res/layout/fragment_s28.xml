@@ -3,12 +3,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".s28">
-
+    android:background="@drawable/vintage2">
     <!-- TODO: Update blank fragment layout -->
+
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Article 28"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="\t•	Everyone is entitled to a social and international order in which the rights and freedoms set forth in the Declaration can be fully realized.\n\n
+\t• 	Everyone has a duty to promote respect for the rights and freedoms set forth in the Declaration.\n\n
+\t• 	No provision in the Declaration can be interpreted as implying for any State, group or person any right to engage in any activity or to perform any act aimed at the destruction of any of the rights and freedoms set forth in the Declaration.\n\n
+\t• 	Nothing in the Declaration shall be construed as implying for any State, group or person any right to engage in any activity or to perform any act aimed at the limitation of any of the rights and freedoms set forth in the Declaration.\n\n
+\t• 	The provisions of the Declaration are universal and apply equally to all human beings, regardless of race, color, sex or other opinion, national or social origin, property, birth or other status.\n\n
+"
+        android:textSize="19sp"/>
 </FrameLayout>

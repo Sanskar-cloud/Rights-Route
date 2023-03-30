@@ -3,13 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cricket">
+    android:background="@drawable/vintage2">
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Basketball"
-        android:textAlignment="center"
-        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Article 21"
+        android:textColor="@color/black"
+        android:textSize="30sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="\t•	Everyone has the right to take part in the government of their country, directly or through freely chosen representatives.\n\n
+\t• 	Everyone has the right to equal access to public service in their country.\n\n
+\t• 	The will of the people shall be the basis of the authority of government.\n\n
+\t• 	This will shall be expressed in periodic and genuine elections, which shall be by universal and equal suffrage and shall be held by secret ballot or by equivalent free voting procedures.\n\n
+\t• 	The right to vote and to be elected in genuine periodic elections is a fundamental human right that is essential for the functioning of a democratic society and for the promotion and protection of other human rights.\n
+"
+        android:textSize="19sp"/>
 </FrameLayout>

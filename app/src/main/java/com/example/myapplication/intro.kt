@@ -1,11 +1,11 @@
 package com.example.myapplication
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.view.WindowManager
 import android.widget.Button
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class intro : AppCompatActivity() {
 
@@ -22,12 +22,17 @@ class intro : AppCompatActivity() {
         button.setOnClickListener{
             val intent = Intent(this, login::class.java)
             startActivity(intent)
+
+            Toast.makeText(this, "Welcome to SignIn", Toast.LENGTH_SHORT).show()
         }
         val button2 = findViewById<Button>(R.id.btn_signup)
         button2.setOnClickListener{
             val intent = Intent(this, signup::class.java)
             startActivity(intent)
+
+            Toast.makeText(this, "Create New Account", Toast.LENGTH_SHORT).show()
         }
+
 
     }
 }

@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RighttoEquality1">
+    android:background="@drawable/vintage"
+    tools:context=".Righttofrees2">
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -18,57 +20,93 @@
             android:id="@+id/imageView"
             android:layout_width="70dp"
             android:layout_height="67dp"
+            android:layout_marginBottom="61dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:srcCompat="@drawable/symbol" />
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="289dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="25dp"
-            android:text="4.Right To Freedom Of Religion"
-            android:textColor="#769FC3"
-            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="Right to Freedom \nof Religion"
+            android:textColor="@color/black"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
 
     </LinearLayout>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="380dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="66dp"
+        android:background="@drawable/transparent_background"
+        android:elevation="25dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
 
-    <Button
-    android:id="@+id/btneql2"
-    android:layout_width="174dp"
-    android:layout_height="55dp"
-    android:layout_alignParentBottom="true"
-    android:layout_marginBottom="20dp"
-    android:background="#3D737A"
-    android:marqueeRepeatLimit="marquee_forever"
-    android:text="Know More!"
-    app:backgroundTint="#0E2D37"
-    app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    xmlns:android="http://schemas.android.com/apk/res/android" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/vintage2">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:text="\t1. The right to freedom of religion is a fundamental human right that includes the freedom to practice, worship, and observe one\'s religion or belief without interference or coercion.\n\n
+2. The right to freedom of religion also includes the freedom to change one\'s religion.\n\n
+\t3. The right to freedom of religion is essential for the protection of human dignity.\n\n
+\t4. The right to freedom of religion is protected by international and national laws and institutions, including courts and human rights bodies.\n\n
+\t5. The right to freedom of religion may be subject to certain limitations, such as for the protection of public safety, order, health, or morals .\n"
+            android:textSize="19sp">
 
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
+        </TextView>
 
-    <TextView
-        android:id="@+id/txt"
+
+        <Button
+            android:id="@+id/buteql"
+
+            android:layout_width="174dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="93dp"
+            android:layout_marginTop="535dp"
+            android:layout_marginBottom="20dp"
+            android:text="Know More!"
+            android:textColor="@color/white"
+            android:background="@drawable/cardgradient"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        />
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="608dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="125dp"
-        android:layout_marginRight="5dp"
-        android:text="Religion is a matter of belief or faith. The constitution of India recognizes the fact, how important religion is in the life of people of India and hence, provides for the right to freedom of religion under Articles 25 to Article 28.The Constitution of India envisages a secular model and provides that every person has the right and freedom to choose and practice his or her religion.Secularism means developing, understanding and respect for different religions.In 1976 the Indira Gandhi government enacted the 42nd Amendment Act and the word ‘Secular’ was added to the Preamble. The 42nd Amendment Act also known as the ‘Mini Constitution’, is the most comprehensive amendment to the Constitution."
-        android:textSize="22sp" />
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-</LinearLayout>
+    </LinearLayout>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

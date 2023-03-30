@@ -3,13 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cricket">
+    android:background="@drawable/vintage2">
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Basketball"
-        android:textAlignment="center"
-        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Article 19"
+        android:textColor="@color/black"
+        android:textSize="30sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="\t•	Everyone has the right to freedom of opinion and expression.\n\n
+\t• 	This right includes freedom to hold opinions without interference and to seek, receive, and impart information and ideas through any media and regardless of frontiers.\n\n
+\t• 	The exercise of this right may be subject to certain restrictions, but only those provided by law and necessary for respect of the rights or reputations of others, or for the protection of national security or of public order or of public health or morals.\n\n
+\t• 	Freedom of expression includes the freedom to express one's opinions without interference, to seek and receive information and ideas.\n\n
+\t• 	The right to freedom of expression is a fundamental human right that is essential for the functioning of a democratic society and for the promotion and protection of other human rights.\n
+"
+        android:textSize="19sp"/>
 </FrameLayout>

@@ -52,6 +52,8 @@ class login : AppCompatActivity() {
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
 
                         }
+
+                        Toast.makeText(this, "Welcome to Home Page", Toast.LENGTH_SHORT).show()
                     }
                 } else {
                     Toast.makeText(this, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT).show()

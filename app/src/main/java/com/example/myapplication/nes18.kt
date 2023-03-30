@@ -14,6 +14,6 @@ class A18 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_nes18, container, false)
+        return inflater.inflate(R.layout.fragment_s18, container, false)
     }
 }

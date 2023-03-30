@@ -1,14 +1,20 @@
 package com.example.myapplication
 
 import android.content.Intent
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.cardview.widget.CardView
+import androidx.core.content.ContextCompat
 
 class VoilationRules : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_voilation_rules)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        val actionBar = supportActionBar
+        actionBar?.setBackgroundDrawable(ColorDrawable(ContextCompat.getColor(this, R.color.nav_color)))
 
         val cardView = findViewById<CardView>(R.id.cardis1)
         cardView.setOnClickListener {

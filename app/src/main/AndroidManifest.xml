@@ -4,6 +4,11 @@
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
@@ -17,63 +22,95 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Rights Route"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".EditProfilePage"
-            android:exported="false">
+            android:name=".Web3"
+            android:exported="false"
+            android:parentActivityName=".righttovote2">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Profile"
-            android:exported="false">
+            android:name=".righttovote2"
+            android:exported="false"
+            android:parentActivityName=".RightToVote">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".RightToVote"
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".web2"
+            android:exported="false"
+            android:parentActivityName=".VoilationRules">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".EditProfilePage"
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".NewsDetailActivity"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".news">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".news"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Righttooconsremedy2"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".Rightconsremedy1">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Rightconsremedy1"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Rightreligion2"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".Rightreligion1">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Rightreligion1"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -102,29 +139,25 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity2"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".crevedio"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".cretoria">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".quovedio"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".quowarranto">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".provedio"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".Prohibition">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -154,112 +187,128 @@
         </activity>
         <activity
             android:name=".quowarranto"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".VoilationRules">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Prohibition"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".VoilationRules">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".cretoria"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".VoilationRules">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Mandveedio"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".Mandamus">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".hvedio"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".HabesCorpus">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Mandamus"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".VoilationRules">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".HabesCorpus"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".VoilationRules">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".VoilationRules"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".Voilation">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Righttofrees2"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".Righttofreess">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Righttofreess"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Righttoexpolio"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".RightTofreedom2"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".RighttoEquality1"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Righttoexpl"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".Righttoexpolio">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".RightToFreedom"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".RightTofreedom2">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Righttoequality"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".RighttoEquality1">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -273,7 +322,8 @@
         </activity>
         <activity
             android:name=".Voilation"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

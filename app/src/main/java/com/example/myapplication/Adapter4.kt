@@ -15,10 +15,16 @@ internal class Adapter4(
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> {
-                A29()
+                A25()
             }
             1 -> {
-                A30()
+                A26()
+            }
+            2 -> {
+                A27()
+            }
+            3 -> {
+                A28()
             }
 
 

@@ -9,6 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="green">#39ff14 </color>
     <color name="orange">#ff9933 </color>
+    <color name="brown">#7EAA4B0B</color>
+    <color name="nav_color">#6A4911</color>
 
 
 </resources>

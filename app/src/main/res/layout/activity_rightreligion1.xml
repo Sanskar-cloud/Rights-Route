@@ -3,9 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/background"
     android:layout_height="match_parent"
-    tools:context=".RighttoEquality1">
+    android:background="@drawable/vintage"
+    tools:context=".Rightreligion1">
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -15,21 +16,25 @@
         tools:layout_editor_absoluteX="-27dp"
         tools:layout_editor_absoluteY="-145dp">
 
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="70dp"
             android:layout_height="67dp"
+            android:layout_marginBottom="61dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
-            tools:srcCompat="@drawable/googleg_standard_color_18" />
+            app:srcCompat="@drawable/symbol" />
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="left"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="15dp"
             android:layout_marginBottom="30dp"
-            android:text="Right to Equality"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="Cultural and\nEducational Rights"
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -37,38 +42,73 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/buteql"
-
-        android:layout_width="174dp"
-        android:layout_height="55dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
-        android:marqueeRepeatLimit="marquee_forever"
-        android:text="Know More!"
-        android:textColor="@color/white"
-        app:backgroundTint="@color/purple_200"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="380dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="66dp"
+        android:background="@drawable/transparent_background"
+        android:elevation="25dp"
+        app:cardCornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/vintage2">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:text="\t1. Cultural and educational rights are fundamental human rights that protect an individual\'s right to participate in and benefit from cultural and educational activities.\n\n
+\t2. Cultural rights protect an individual\'s right to participate in cultural life and enjoy the benefits of their own culture, including language, religion, and traditions.\n\n
+\t3. Educational rights protect an individual\'s right to education and ensure that education is accessible, available, and of good quality.\n\n
+\t4.  Cultural and educational rights are essential for the promotion of diversity, intercultural dialogue, and social cohesion.\n\n"
+
+            android:textSize="19sp">
+
+
+        </TextView>
+
+
+        <Button
+            android:id="@+id/buteql"
+
+            android:layout_width="174dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="93dp"
+            android:layout_marginTop="535dp"
+            android:layout_marginBottom="20dp"
+            android:text="Know More!"
+            android:textColor="@color/white"
+            android:background="@drawable/cardgradient"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        />
+    </androidx.cardview.widget.CardView>
 
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/txt"
-            android:layout_width="match_parent"
-            android:layout_height="608dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="125dp"
-            android:layout_marginRight="5dp"
-            android:text="Part III of the Indian Constitution guarantees certain basic rights to all the citizens of India irrespective of their caste, race, birthplace, religion or gender. These basic rights are known as Fundamental Rights which are justifiable. Dr. B. R. Ambedkar referred these as the most citizen part of the constitution. These are deemed an essential part of the constitution as they protect the rights and liberties of the citizens of the country against any misuse or intrusion by the government with the power delegated to them in a democracy. These are the negative obligations of the state and citizens. These rights try to achieve the goals set out in the Preamble, of justice, liberty, equality, fraternity, and dignity."
-            android:textSize="22sp" />
-
     </LinearLayout>
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

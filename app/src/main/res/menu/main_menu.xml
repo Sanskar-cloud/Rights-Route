@@ -3,14 +3,10 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/action_search"
-
-        android:title="Sign Out"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/action_settings"
-        android:title="Settings"
-        app:showAsAction="never" />
+        android:id="@+id/news"
+        android:title="News"
+        android:icon="@drawable/ic_baseline_news_24"
+        app:showAsAction="ifRoom|collapseActionView"/>
 
 
 </menu>

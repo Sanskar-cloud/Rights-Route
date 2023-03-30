@@ -1,7 +1,9 @@
 package com.example.myapplication
 
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 
@@ -12,19 +14,18 @@ class Rightreligion2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rightreligion2)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        val actionBar = supportActionBar
+        actionBar?.setBackgroundDrawable(ColorDrawable(ContextCompat.getColor(this, R.color.nav_color)))
 
 
-
-        title = "KotlinApp"
         tabLayout = findViewById(R.id.tabLayout)
         viewPager = findViewById(R.id.viewPager)
-        tabLayout.addTab(tabLayout.newTab().setText("A19"))
-        tabLayout.addTab(tabLayout.newTab().setText("A20"))
-        tabLayout.addTab(tabLayout.newTab().setText("A21"))
-        tabLayout.addTab(tabLayout.newTab().setText("A22"))
+        tabLayout.addTab(tabLayout.newTab().setText("A29"))
+        tabLayout.addTab(tabLayout.newTab().setText("A30"))
 
         tabLayout.tabGravity = TabLayout.GRAVITY_FILL
-        val adapter = MyAdapter2(
+        val adapter = Adapter5(
             this, supportFragmentManager,
             tabLayout.tabCount
         )

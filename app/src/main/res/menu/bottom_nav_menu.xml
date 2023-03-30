@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/vote"
         android:icon="@drawable/ic_baseline_vote_24"
-        android:title="Vote"/>
+        android:title="Vote" />
 
     <item
-        android:id="@+id/news"
-        android:icon="@drawable/ic_baseline_news_24"
-        android:title="News"/>
+        android:id="@+id/location"
+        android:icon="@drawable/ic_baseline_location_24"
+        android:title="Location"/>
 
     <item
         android:id="@+id/home"
@@ -21,9 +22,9 @@
         android:icon="@drawable/ic_baseline_violation_24"
         android:title="Voilation"/>
     <item
-        android:id="@+id/location"
-        android:icon="@drawable/ic_baseline_location_24"
-        android:title="Map"/>
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_baseline_setting"
+        android:title="Settings"/>
 
 
 

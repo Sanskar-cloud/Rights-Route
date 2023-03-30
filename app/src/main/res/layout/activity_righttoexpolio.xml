@@ -1,9 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RighttoEquality1">
+    android:background="@drawable/vintage"
+    tools:context=".Righttoexpolio">
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -17,54 +20,92 @@
             android:id="@+id/imageView"
             android:layout_width="70dp"
             android:layout_height="67dp"
+            android:layout_marginBottom="61dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:srcCompat="@drawable/symbol" />
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="31dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="40dp"
-            android:text="1.Right To Exploitation"
-            android:textColor="#769FC3"
-            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="Right Against Exploitation"
+            android:textColor="@color/black"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/janoo"
-        android:layout_width="174dp"
-        android:layout_height="55dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
-        android:background="#3D737A"
-        android:marqueeRepeatLimit="marquee_forever"
-        android:text="Know More!"
-        app:backgroundTint="#0E2D37"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="380dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="66dp"
+        android:background="@drawable/transparent_background"
+        android:elevation="25dp"
+        app:cardCornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/vintage2">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:text="\t1. The right against exploitation is a fundamental human right that prohibits all forms of forced labor, child labor, and human trafficking.\n\n
+\t2. The right against exploitation also includes the prohibition of employment of children in hazardous occupations or industries.\n\n
+\t3. The right against exploitation is essential for protecting vulnerable groups from exploitation and abuse.\n\n
+\t4. The right against exploitation is protected by international and national laws and institutions, including courts and human rights bodies.\n\n
+\t5. The right against exploitation requires governments and other institutions to adopt measures to prevent and eliminate all forms of exploitation. \n"
+            android:textSize="19sp">
+
+
+        </TextView>
+
+
+        <Button
+            android:id="@+id/buteql"
+
+            android:layout_width="174dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="93dp"
+            android:layout_marginTop="535dp"
+            android:layout_marginBottom="20dp"
+            android:text="Know More!"
+            android:textColor="@color/white"
+            android:background="@drawable/cardgradient"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        />
+    </androidx.cardview.widget.CardView>
+
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/txt"
-            android:layout_width="match_parent"
-            android:layout_height="608dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="125dp"
-            android:layout_marginRight="5dp"
-            android:text="The right to exploitation is enshrined in Articles 23 and 24 of the Constitution of India. These are important fundamental rights that ensure the safety of every citizen from any form of forced labor.  The right to exploit within its limits includes various forms of slavery and oppression. These include aspects of exploitation such as bonded wages, forced labor, prison staff, beggars, and, most controversially, human trafficking. This includes the right to exploit children under 14 and the judiciary’s approach to abolish such practices.  The Constitution of India is harmful to the dignity and freedom of any person. Many activists are still forced to work at low rates against their will and millions of women and children fall victim to human trafficking."
-            android:textSize="22sp" />
-
     </LinearLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,6 @@ class A14 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cricket, container, false)
+        return inflater.inflate(R.layout.fragment_s14, container, false)
     }
 }

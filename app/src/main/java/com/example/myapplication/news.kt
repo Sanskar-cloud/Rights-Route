@@ -1,11 +1,13 @@
 package com.example.myapplication
 
 import android.annotation.SuppressLint
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.util.Log
 import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.*
@@ -30,6 +32,11 @@ class news : AppCompatActivity(), CategoryRVAdapter.CategoryClickInterface {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        val actionBar = supportActionBar
+        actionBar?.setBackgroundDrawable(ColorDrawable(ContextCompat.getColor(this, R.color.nav_color)))
+
         NewsRV = findViewById(R.id.idRVNews)
         CategoryRV = findViewById(R.id.idRVCategories)
         loadingPB = findViewById(R.id.loadingPB)
@@ -47,10 +54,14 @@ class news : AppCompatActivity(), CategoryRVAdapter.CategoryClickInterface {
     private fun getCategories() {
         categoryRVModalArrayList.add(
             CategoryRVModal(
-                "Supreme Court",
+                "Fundamental Rights",
                 "https://www.pexels.com/photo/people-having-a-concert-1190297/"
             )
+
         )
+
+
+
 
 
         categoryRVAdapter.notifyDataSetChanged()
@@ -60,8 +71,13 @@ class news : AppCompatActivity(), CategoryRVAdapter.CategoryClickInterface {
         articlesArrayList.clear()
 
         val CategoryUrl =
-            "https://gnews.io/api/v4/search?q=supreme+court+india&country=in&&apikey=169749425022e79418746ed5d09b260c"
-        val URL = "https://gnews.io"
+
+           "https://newsapi.org/v2/everything?q=fundamental+rights+india+and+supreme+court&from=2023-02-28&sortBy=publishedAt&apiKey=80e71f59294440f5bbbf0abe3be8abf0"
+
+
+
+
+        val URL = "https://newsapi.org"
 
 
         val retrofit = Retrofit.Builder()

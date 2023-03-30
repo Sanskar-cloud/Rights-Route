@@ -3,12 +3,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".s30">
-
+    android:background="@drawable/vintage2">
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Article 30"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="\t•	The Declaration does not grant any State, group, or individual the right to engage in activities that aim to destroy any of the rights and freedoms mentioned in the Declaration.\n\n
+\t•	No State, group, or individual can undertake any activities or perform any acts that aim to limit or curtail the rights and freedoms mentioned in the Declaration.\n\n
+\t• 	The rights and freedoms mentioned in the Declaration are universal, meaning that they apply to everyone.\n\n
+\t• 	The rights and freedoms mentioned in the Declaration are inalienable, which means that they cannot be taken away or surrendered by any person or authority.\n\n
+\t• 	The rights and freedoms mentioned in the Declaration are indivisible, meaning that they are interdependent and interrelated and that the violation of one right can have a cascading effect on the enjoyment of other rights.\n\n
+"
+        android:textSize="19sp"/>
 </FrameLayout>

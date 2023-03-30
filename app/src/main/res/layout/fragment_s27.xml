@@ -3,12 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".s27">
-
+    android:background="@drawable/vintage2">
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Article 27"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="\t•	Everyone has the right to freely participate in the cultural life of the community, to enjoy the arts and to share in scientific advancement and its benefits.\n\n
+\t• 	Everyone has the right to the protection of the moral and material interests .\n\n
+\t• 	Everyone has the right to the freedom of thought, conscience, including the freedom to change their religion or belief, and the freedom, either alone or in community with others and in public or private, to manifest their religion or belief in teaching, practice and worship\n\n
+\t• 	No one may be compelled to belong to an association or to attend a religious ceremony or rite.\n\n
+\t• 	The right to enjoy and participate in cultural life is a fundamental human right that is essential for the full development of the human personality and for the promotion and protection of other human rights.\n\n
+"
+        android:textSize="19sp"/>
 </FrameLayout>

@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/vintage"
     tools:context=".RighttoEquality1">
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -14,61 +16,93 @@
         tools:layout_editor_absoluteX="-27dp"
         tools:layout_editor_absoluteY="-145dp">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="70dp"
-            android:layout_height="67dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-            tools:srcCompat="@tools:sample/avatars" />
+
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="289dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
             android:layout_marginTop="35dp"
-            android:text="Voilation Of Rights!"
-            android:textColor="#769FC3"
-            android:textSize="25sp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Violation Of Rights"
+            android:textColor="@color/black"
+            android:textSize="32sp"
             android:textStyle="bold" />
 
 
     </LinearLayout>
 
-
-    <Button
-        android:id="@+id/btneql3"
-        android:layout_width="174dp"
-        android:layout_height="55dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
-        android:background="#3D737A"
-        android:marqueeRepeatLimit="marquee_forever"
-        android:text="Know More!"
-        app:backgroundTint="#0E2D37"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="380dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="66dp"
+        app:cardCornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="parent"
-        xmlns:android="http://schemas.android.com/apk/res/android" />
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/vintage2">
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:text="\t•  Refers to actions or policies that infringe on an individual's basic human rights or civil liberties.\n\n
+
+\t•  Examples of rights that may be violated include freedom of speech, freedom of religion, and the right to be free from discrimination.\n\n
+
+\t•  Violations of rights can be committed by individuals, organizations, or governments.\n\n
+
+\t•  In some cases, violations of rights can be addressed through legal remedies such as filing a lawsuit or seeking a court order.\n\n
+
+\t•  Protecting individual rights is a fundamental principle of many legal systems, and violations of rights are often seen as a serious breach of ethical and legal standards.\n"
+            android:textSize="19sp">
+
+
+
+        </TextView>
+
+
+        <Button
+            android:id="@+id/buteql"
+
+            android:layout_width="174dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="93dp"
+            android:layout_marginTop="535dp"
+            android:layout_marginBottom="20dp"
+            android:text="Know More!"
+            android:textColor="@color/white"
+            android:background="@drawable/cardgradient"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        />
+        />
+
+
+    </androidx.cardview.widget.CardView>
 
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/txt"
-            android:layout_width="match_parent"
-            android:layout_height="608dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="125dp"
-            android:layout_marginRight="5dp"
-            android:text="Article 226 provide the Supreme Court and the High Courts the authority to bring a lawsuit against a government entity if any citizen’s rights and freedoms are violated.  The High Court has broad powers to issue orders and writs to any person or authority under Article 226 of the Indian Constitution.Article 226 provides the High Courts with the power to issue writs, including writs in the form of habeas corpus, mandamus, prohibition, quo warranto, certiorari, or any of them, to any person or authority, including the government."
-            android:textSize="22sp" />
-
     </LinearLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

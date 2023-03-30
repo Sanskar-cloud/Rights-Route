@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vintage2">
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Article 18"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="\t•	Everyone has the right to freedom of thought, conscience, and religion.\n\n
+\t•	This right includes freedom to change their religion or belief, and freedom, either alone or in community with others and in public or private, to manifest their religion or belief in teaching, practice, worship, and observance.\n\n
+\t•	No one shall be forced to adopt a particular religion or belief.\n\n
+\t•	Everyone has the right to freedom of thought and conscience, and this right includes the freedom to hold opinions without interference and to seek, receive, and impart information and ideas through any media and regardless of frontiers.\n\n
+\t•	The exercise of these rights may be subject to restrictions that are necessary to protect public safety, order, health, or morals or the fundamental rights and freedoms of others.\n\n
+"
+        android:textSize="19sp"/>
+</FrameLayout>

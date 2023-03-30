@@ -3,13 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cricket">
+    android:background="@drawable/vintage2">
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Basketball"
-        android:textAlignment="center"
-        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Article 23"
+        android:textColor="@color/black"
+        android:textSize="30sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="\t• 	Everyone has the right to work, to free choice of employment, to just and favorable conditions of work and to protection against unemployment.\n\n
+\t• 	Everyone, without any discrimination, has the right to equal pay for equal work.\n\n
+\t• 	Everyone who works has the right to just and favorable remuneration, ensuring for themselves and their family an existence worthy of human dignity, and supplemented, if necessary, by other means of social protection.\n\n
+\t• 	Everyone has the right to form and join trade unions for the protection of their interests.\n\n
+\t• 	Everyone has the right to rest and leisure, including reasonable limitation of working hours and periodic holidays with pay.\n\n
+"
+        android:textSize="19sp"/>
 </FrameLayout>

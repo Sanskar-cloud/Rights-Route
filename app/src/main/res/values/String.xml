@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="textformat">
+1. The right to equality ensures that all individuals are treated equally under the law, without discrimination or prejudice.\n
+2. Discrimination on any ground, such as race, gender, religion, and sexual orientation, is strictly prohibited under the right to equality.\n
+3. The right to equality is essential to promote social justice, eliminate poverty, and advance sustainable development.\n
+4. The right to equality includes access to education, healthcare, employment, and other essential services without discrimination.\n
+5. The right to equality is protected by international and national laws and institutions, including courts and human rights bodies.
+</string>
+
+    <string name="textformat2">
+<br>1. The right to freedom is a fundamental human right that includes freedom of speech, religion, assembly, and association.\n</br>
+<br>2. The right to freedom also includes the right to privacy, the right to a fair trial, and the right to seek asylum.\n</br>
+<br>3. The right to freedom is essential for the protection of human dignity, individual autonomy, and the promotion of democracy.\n</br>
+<br>4. The right to freedom is protected by international and national laws and institutions, including courts and human rights bodies.\n</br>
+<br>5. The right to freedom may be subject to certain limitations, such as for the protection of public order, national security, and the rights of others, but such limitations must be proportionate and necessary.\n</br>
+    </string>
+
+    <string name="textformat3">
+<br>1. The right against exploitation is a fundamental human right that prohibits all forms of forced labor, child labor, and human trafficking.\n</br>
+<br>2. The right against exploitation also includes the prohibition of employment of children in hazardous occupations or industries.\n</br>
+<br>3. The right against exploitation is essential for protecting vulnerable groups, including children, women, and migrant workers, from exploitation and abuse.\n</br>
+<br>4. The right against exploitation is protected by international and national laws and institutions, including courts and human rights bodies.\n</br>
+<br>5. The right against exploitation requires governments and other institutions to adopt measures to prevent and eliminate all forms of exploitation, including through education, social protection, and law enforcement.\n</br>
+    </string>
+
+    <string name="textformat4">
+<br>1. The right to freedom of religion is a fundamental human right that includes the freedom to practice, worship, and observe one\'s religion or belief without interference or coercion.\n</br>
+<br>2. The right to freedom of religion also includes the freedom to change one\'s religion or belief and to manifest it in public or private.\n</br>
+<br>3. The right to freedom of religion is essential for the protection of human dignity, individual autonomy, and the promotion of diversity and pluralism.\n</br>
+<br>4. The right to freedom of religion is protected by international and national laws and institutions, including courts and human rights bodies.\n</br>
+<br>5. The right to freedom of religion may be subject to certain limitations, such as for the protection of public safety, order, health, or morals, but such limitations must be proportionate and necessary.\n</br>
+    </string>
+
+    <string name="textformat5">
+<br>1. Cultural and educational rights are fundamental human rights that protect an individual\'s right to participate in and benefit from cultural and educational activities.\n</br>
+<br>2. Cultural rights protect an individual\'s right to participate in cultural life and enjoy the benefits of their own culture, including language, religion, and traditions.\n</br>
+<br> 3. Educational rights protect an individual\'s right to education and ensure that education is accessible, available, and of good quality.\n</br>
+<br>4.  Cultural and educational rights are essential for the promotion of diversity, intercultural dialogue, and social cohesion.\n</br>
+<br>5. Cultural and educational rights are protected by international and national laws and institutions, including courts and human rights bodies, and require governments to adopt measures to ensure their effective implementation.\n</br>
+    </string>
+
+    <string name="textformat6">
+<br>1. The right to constitutional remedies is a fundamental human right that enables individuals to seek legal redress for the violation of their rights.\n</br>
+<br> 2. The right to constitutional remedies provides individuals with access to effective and timely remedies, including through courts and other legal mechanisms.\n</br>
+<br> 3. The right to constitutional remedies is essential for ensuring the rule of law, accountability, and the protection of human rights.\n</br>
+<br> 4. The right to constitutional remedies is protected by international and national laws and institutions, including courts and human rights bodies.\n</br>
+<br> 5. The right to constitutional remedies requires governments to establish and maintain effective and accessible judicial systems and to ensure that individuals have access to legal aid and other support services to exercise their rights.\n</br>
+
+
+    </string>
+
+
+</resources>

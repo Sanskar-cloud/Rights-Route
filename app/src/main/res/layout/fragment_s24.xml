@@ -3,13 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cricket">
+    android:background="@drawable/vintage2">
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Basketball"
-        android:textAlignment="center"
-        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Article 24"
+        android:textColor="@color/black"
+        android:textSize="30sp"
         android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="\t•	Everyone has the right to the highest attainable standard of physical and mental health.\n\n
+\t• 	States have a responsibility to ensure access to medical care and necessary social services, regardless of economic or social status.\n\n
+\t• 	States must take measures to prevent, treat, and control epidemic, endemic, occupational, and other diseases.\n\n
+\t• 	Everyone has the right to information and education on health-related issues.\n\n
+\t• 	States must ensure the provision of safe and healthy working conditions, and protect workers in hazardous occupations.\n\n
+
+"
+        android:textSize="19sp"/>
 </FrameLayout>

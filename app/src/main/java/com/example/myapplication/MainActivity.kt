@@ -1,13 +1,17 @@
 package com.example.myapplication
 
 import android.content.Intent
+import android.content.res.Configuration
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import androidx.core.content.ContextCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +22,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val actionBar = supportActionBar
+        actionBar?.setBackgroundDrawable(ColorDrawable(ContextCompat.getColor(this, R.color.nav_color)))
+
+
+
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         bottomNavigationView.selectedItemId = R.id.home
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
@@ -27,9 +36,20 @@ class MainActivity : AppCompatActivity() {
                     overridePendingTransition(0, 0)
                     true
                 }
+                R.id.vote -> {
+                    startActivity(Intent(applicationContext, RightToVote::class.java))
+                    overridePendingTransition(0, 0)
+                    true
+                }
                 R.id.home -> true
+
                 R.id.violation -> {
                     startActivity(Intent(applicationContext, Voilation::class.java))
+                    overridePendingTransition(0, 0)
+                    true
+                }
+                R.id.home -> {
+                    startActivity(Intent(applicationContext, MainActivity::class.java))
                     overridePendingTransition(0, 0)
                     true
                 }
@@ -39,9 +59,17 @@ class MainActivity : AppCompatActivity() {
                     true
 
                 }
+                R.id.setting-> {
+                    startActivity(Intent(applicationContext,EditProfilePage::class.java))
+                    overridePendingTransition(0, 0)
+                    true
+
+                }
                 else -> false
             }
         }
+
+
 
 
     firebaseAuth = FirebaseAuth.getInstance()
@@ -83,15 +111,9 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
-
-        val signOutItem = menu?.findItem(R.id.action_search)
-        signOutItem?.setOnMenuItemClickListener {
-            FirebaseAuth.getInstance().signOut()
-            true
-        }
-
 
         return true
     }
@@ -99,12 +121,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
-
-
         when (item.itemId) {
 
-            R.id.action_settings -> {
-                val intent = Intent(this, EditProfilePage::class.java)
+            R.id.news-> {
+                val intent = Intent(this, news::class.java)
                 startActivity(intent)
                 return true
 
@@ -112,6 +132,17 @@ class MainActivity : AppCompatActivity() {
             }
             else -> return super.onOptionsItemSelected(item)
         }
+
+        fun setLocale(languageCode: String) {
+            val locale = Locale(languageCode)
+            Locale.setDefault(locale)
+            val resources = applicationContext.resources
+            val config = Configuration(resources.configuration)
+            config.setLocale(locale)
+            resources.updateConfiguration(config, resources.displayMetrics)
+        }
+
+
 
 
     }

@@ -4,30 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login">
+    tools:context=".login"
+    android:background="@drawable/vintage">
 
     <!--  <include
           android:id="@+id/aToolbar"
           layout="@layout/toolbar"></include> -->
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/background" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/top_background" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -48,7 +32,7 @@
                 android:layout_marginTop="100dp"
                 android:layout_marginBottom="100dp"
                 android:text="Welcome Back"
-                android:textColor="#603a91"
+                android:textColor="#6A4911"
                 android:textSize="40sp"
                 android:textStyle="bold" />
 
@@ -60,14 +44,14 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/edittext"
-                android:drawableStart="@drawable/email"
+                android:drawableStart="@drawable/email3"
                 android:drawablePadding="16dp"
 
                 android:ems="10"
                 android:hint="Email"
                 android:inputType="textPersonName"
                 android:padding="8dp"
-                android:textColorHint="#603a91" />
+                android:textColorHint="#6A4911" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/oldpass"
@@ -85,14 +69,14 @@
                     android:layout_marginTop="32dp"
                     android:layout_marginEnd="32dp"
                     android:background="@drawable/edittext"
-                    android:drawableStart="@drawable/password"
+                    android:drawableStart="@drawable/password2"
 
                     android:drawablePadding="16dp"
                     android:ems="10"
                     android:hint="Password"
                     android:inputType="textPassword"
                     android:padding="8dp"
-                    android:textColorHint="#603a91" />
+                    android:textColorHint="#6A4911" />
             </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -103,7 +87,7 @@
                 android:layout_marginLeft="250dp"
                 android:layout_marginTop="10dp"
                 android:text="Forgot Password?"
-                android:textColor="#5E35B1"
+                android:textColor="#6A4911"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -113,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:layout_marginTop="16dp"
-                app:srcCompat="@drawable/btn_login" />
+                app:srcCompat="@drawable/btn_login3" />
 
             <Button
                 android:id="@+id/button3"
@@ -123,12 +107,12 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="32dp"
-                android:background="@drawable/btn_background2"
-                android:drawableStart="@drawable/google"
+                android:background="@drawable/cardgradient"
+                android:drawableStart="@drawable/google2"
                 android:drawablePadding="16dp"
                 android:padding="10dp"
                 android:text="Sign up with google"
-                android:textColor="#603a91"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -140,12 +124,12 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="32dp"
-                android:background="@drawable/btn_background2"
-                android:drawableStart="@drawable/facebook"
+                android:background="@drawable/cardgradient"
+                android:drawableStart="@drawable/facebook3"
                 android:drawablePadding="16dp"
                 android:padding="10dp"
                 android:text="Sign in with facebook"
-                android:textColor="#603a91"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -162,7 +146,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Are you new user? "
-                    android:textColor="#603a91"
+                    android:textColor="#6A4911"
                     android:textStyle="bold"
                     tools:layout_conversion_absoluteHeight="19dp"
                     tools:layout_conversion_absoluteWidth="167dp"
@@ -174,7 +158,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Register "
-                    android:textColor="#603a91"
+                    android:textColor="#6A4911"
                     android:textStyle="bold"
                     tools:layout_conversion_absoluteHeight="19dp"
                     tools:layout_conversion_absoluteWidth="47dp"

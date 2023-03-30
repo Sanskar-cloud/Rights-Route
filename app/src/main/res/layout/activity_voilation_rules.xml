@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="100dp"
+    android:background="@drawable/vintage"
+
 
     android:orientation="vertical">
 
@@ -13,17 +14,29 @@
         android:layout_height="75dp"
         android:layout_margin="8dp"
         android:layout_marginTop="60dp"
-        android:background="@drawable/cardgradient"
         app:cardCornerRadius="5dp"
         app:cardElevation="25dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/vintage2"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center|start"
             android:text="1. Habeas Corpus"
+            android:textColor="@color/black"
             android:textAlignment="gravity"
             android:textSize="25sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="350dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24">
+
+        </ImageView>
+
 
 
 
@@ -41,6 +54,10 @@
         android:background="@drawable/cardgradient"
         app:cardCornerRadius="5dp"
         app:cardElevation="25dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/vintage2"/>
 
         <!-- Card content here -->
         <TextView
@@ -48,8 +65,16 @@
             android:layout_height="match_parent"
             android:gravity="center|start"
             android:text="2. Mandamus"
+            android:textColor="@color/black"
             android:textAlignment="gravity"
             android:textSize="25sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="350dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24">
+
+        </ImageView>
 
 
 
@@ -63,6 +88,10 @@
         android:background="@drawable/cardgradient"
         app:cardCornerRadius="5dp"
         app:cardElevation="25dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/vintage2"/>
 
         <!-- Card content here -->
         <TextView
@@ -70,8 +99,17 @@
             android:layout_height="match_parent"
             android:gravity="center|start"
             android:text="3. Certiorari  "
+            android:textColor="@color/black"
             android:textAlignment="gravity"
             android:textSize="25sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="350dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24">
+
+        </ImageView>
+
 
 
 
@@ -85,6 +123,10 @@
         android:background="@drawable/cardgradient"
         app:cardCornerRadius="5dp"
         app:cardElevation="25dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/vintage2"/>
 
         <!-- Card content here -->
         <TextView
@@ -92,8 +134,17 @@
             android:layout_height="match_parent"
             android:gravity="center|start"
             android:text="4. Prohibition  "
+            android:textColor="@color/black"
             android:textAlignment="gravity"
             android:textSize="25sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="350dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24">
+
+        </ImageView>
+
 
 
 
@@ -107,6 +158,10 @@
         android:background="@drawable/cardgradient"
         app:cardCornerRadius="5dp"
         app:cardElevation="25dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/vintage2"/>
 
         <!-- Card content here -->
         <TextView
@@ -114,8 +169,17 @@
             android:layout_height="match_parent"
             android:gravity="center|start"
             android:text="5. Quo Warranto "
+            android:textColor="@color/black"
             android:textAlignment="gravity"
             android:textSize="25sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="350dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24">
+
+        </ImageView>
+
 
 
 

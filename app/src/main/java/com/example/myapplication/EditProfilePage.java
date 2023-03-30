@@ -8,6 +8,7 @@ import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -24,10 +25,13 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 
 import com.bumptech.glide.Glide;
+import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -61,7 +65,9 @@ public class EditProfilePage extends AppCompatActivity {
     String storagepath = "Users_Profile_Cover_image/";
     String uid;
     ImageView set;
-    TextView profilepic, editname, editpassword;
+    Button profilepic;
+    CardView editpassword;
+    CardView logout;
     ProgressDialog pd;
     private static final int CAMERA_REQUEST = 100;
     private static final int STORAGE_REQUEST = 200;
@@ -77,18 +83,34 @@ public class EditProfilePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile_page);
 
-        profilepic = findViewById(R.id.profilepic);
-        editname = findViewById(R.id.editname);
+
+        // Enable the "Up" button on the action bar
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
+// Customize the action bar background color
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setBackgroundDrawable(new ColorDrawable(ContextCompat.getColor(this, R.color.nav_color)));
+        }
+
+
+        profilepic = findViewById(R.id.image);
+        logout=findViewById(R.id.out);
+
+
         set = findViewById(R.id.setting_profile_image);
         pd = new ProgressDialog(this);
         pd.setCanceledOnTouchOutside(false);
-        editpassword = findViewById(R.id.changepassword);
+
+        editpassword = findViewById(R.id.change);
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseUser = firebaseAuth.getCurrentUser();
         if (firebaseUser != null) {
             String userEmail = firebaseUser.getEmail();
             // Do something with the user's email...
-            EditText editTextTextPersonName= (EditText) findViewById(R.id.editTextTextpassword);
+            TextView editTextTextPersonName= (TextView) findViewById(R.id.mail);
             editTextTextPersonName.setText(userEmail);
 
         }
@@ -122,29 +144,8 @@ public class EditProfilePage extends AppCompatActivity {
 
 
 
-        Query query2 = databaseReference.orderByChild("email").equalTo(firebaseUser.getEmail());
-        query2.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
-
-                    String name = dataSnapshot1.child("name").getValue(String.class);
-
-                    try {
-                        EditText editTextTextPersonName= (EditText) findViewById(R.id.editTextTextPersonName);
-                        editTextTextPersonName.setText(name);
 
 
-                    } catch (Exception e) {
-                    }
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
 
         editpassword.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -163,13 +164,15 @@ public class EditProfilePage extends AppCompatActivity {
             }
         });
 
-        editname.setOnClickListener(new View.OnClickListener() {
+        logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                pd.setMessage("Updating Name");
-                showNamephoneupdate("name");
+                Toast.makeText(EditProfilePage.this, "Signing You Out", Toast.LENGTH_SHORT).show();
+                FirebaseAuth.getInstance().signOut();
             }
         });
+
+
 
 
 
@@ -259,8 +262,8 @@ public class EditProfilePage extends AppCompatActivity {
     // checking camera permission ,if given then we can click image using our camera
     private Boolean checkCameraPermission() {
         boolean result = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == (PackageManager.PERMISSION_GRANTED);
-        boolean result1 = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == (PackageManager.PERMISSION_GRANTED);
-        return result && result1;
+//        boolean result1 = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == (PackageManager.PERMISSION_GRANTED);
+        return result ;
     }
 
     // requesting for camera permission if not given

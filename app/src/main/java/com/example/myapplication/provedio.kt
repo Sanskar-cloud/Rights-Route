@@ -1,41 +1,43 @@
 package com.example.myapplication
 
+import android.graphics.drawable.ColorDrawable
+import android.media.MediaPlayer
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import android.widget.MediaController
 import android.widget.VideoView
+import androidx.core.content.ContextCompat
 
 class provedio : AppCompatActivity() {
+
+
+    private lateinit var webView: WebView
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_provedio)
 
-        val videoView = findViewById<VideoView>(R.id.video_view_1)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        val actionBar = supportActionBar
+        actionBar?.setBackgroundDrawable(ColorDrawable(ContextCompat.getColor(this, R.color.nav_color)))
 
-        val youtubeVideoUrl = "https://www.youtube.com/watch?v=xoUHuYNzHnI"
-        videoView.setVideoURI(Uri.parse(youtubeVideoUrl))
+        webView = findViewById(R.id.provedio)
 
+        // Enable JavaScript
+        webView.webViewClient = WebViewClient()
 
+        // this will load the url of the website
+        webView.loadUrl("https://www.youtube.com/watch?v=eZWN-bB5Of4&t=81s")
 
-        val mediaController = MediaController(this)
-        mediaController.setAnchorView(videoView)
-        videoView.setMediaController(mediaController)
+        // this will enable the javascript settings, it can also allow xss vulnerabilities
+        webView.settings.javaScriptEnabled = true
 
-        videoView.start()
-
-
-        val videoView2 = findViewById<VideoView>(R.id.video_view_2)
-
-        val youtubeVideoUrl2 = "https://www.youtube.com/watch?v=YB4Zq92D9Fo"
-        videoView2.setVideoURI(Uri.parse(youtubeVideoUrl2))
-
-
-
-        val mediaController2 = MediaController(this)
-        mediaController2.setAnchorView(videoView2)
-        videoView2.setMediaController(mediaController)
-
-        videoView2.start()
+        // if you want to enable zoom feature
+        webView.settings.setSupportZoom(true)
     }
 }

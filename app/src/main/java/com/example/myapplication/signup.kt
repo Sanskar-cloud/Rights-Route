@@ -52,6 +52,8 @@ class signup : AppCompatActivity() {
                                 Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
 
                             }
+
+                            Toast.makeText(this, "Successfully Registered", Toast.LENGTH_SHORT).show()
                         }
                     } else {
                         Toast.makeText(this, "Password is not matching", Toast.LENGTH_SHORT).show()

@@ -1,41 +1,63 @@
 package com.example.myapplication
 
+import android.content.Intent
+import android.graphics.drawable.ColorDrawable
+import android.media.MediaPlayer
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.webkit.WebResourceRequest
+import android.webkit.WebView
+import android.webkit.WebViewClient
+import android.widget.Button
 import android.widget.MediaController
 import android.widget.VideoView
+import androidx.core.content.ContextCompat
 
 class hvedio : AppCompatActivity() {
+
+    private lateinit var webView: WebView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hvedio)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        val actionBar = supportActionBar
+        actionBar?.setBackgroundDrawable(ColorDrawable(ContextCompat.getColor(this, R.color.nav_color)))
 
-        val videoView1 = findViewById<VideoView>(R.id.video_view_1)
+        webView = findViewById(R.id.webView3)
 
-        videoView1.setVideoURI(Uri.parse("https://www.youtube.com/watch?v=K2sFjCEYMB0"))
+        // Enable JavaScript
+        webView.webViewClient = WebViewClient()
 
-        val mediaController = MediaController(this)
-        mediaController.setAnchorView(videoView1)
-        videoView1.setMediaController(mediaController)
+        // this will load the url of the website
+        webView.loadUrl("https://www.youtube.com/watch?v=R1GtzLewcQE")
 
-        videoView1.start()
+        // this will enable the javascript settings, it can also allow xss vulnerabilities
+        webView.settings.javaScriptEnabled = true
 
-        val videoView2 = findViewById<VideoView>(R.id.video_view_2)
+        // if you want to enable zoom feature
+        webView.settings.setSupportZoom(true)
 
-        val youtubeVideoUrl2 = "https://www.youtube.com/watch?v=duxLMyipJ9c&t"
-        videoView2.setVideoURI(Uri.parse(youtubeVideoUrl2))
-
-
-
-        val mediaController2 = MediaController(this)
-        mediaController2.setAnchorView(videoView2)
-        videoView2.setMediaController(mediaController)
-
-        videoView2.start()
+        val button = findViewById<Button>(R.id.web)
+        button.setOnClickListener{
+            val intent = Intent(this, web2::class.java)
+            startActivity(intent)
+        }
 
 
+    }
 
+    // if you press Back button this code will work
+    override fun onBackPressed() {
+        // if your webview can go back it will go back
+        if (webView.canGoBack())
+            webView.goBack()
+
+
+
+        else
+            super.onBackPressed()
     }
 }

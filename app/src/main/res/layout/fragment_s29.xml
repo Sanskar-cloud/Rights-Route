@@ -3,12 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".s29">
-
+    android:background="@drawable/vintage2">
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Article 29"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="
+\t• 	In the exercise of their rights and freedoms, everyone shall be subject only to such limitations as are determined by law solely for the purpose of securing due recognition and respect for the rights and freedoms of others and of meeting the just requirements of morality, public order, and the general welfare in a democratic society.\n\n
+\t• 	These rights and freedoms may in no case be exercised contrary to the purposes and principles of the United Nations.\n\n
+\t• 	Everyone has the right to education, which shall be directed to the full development of the human personality and to the strengthening of respect for human rights and fundamental freedoms.\n\n
+\t• 	Everyone has a responsibility to respect the rights and freedoms of others and to promote the principles of tolerance, understanding, and peaceful coexistence.\n\n
+
+"
+        android:textSize="19sp"/>
 </FrameLayout>

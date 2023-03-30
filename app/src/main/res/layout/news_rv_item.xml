@@ -15,7 +15,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@color/purple_200"
+            android:background="@color/quantum_grey"
             android:id="@+id/idIVNews"
             android:scaleType="centerCrop">
 
@@ -32,7 +32,7 @@
             android:padding="5dp"
 
 
-            android:textColor="@color/teal_700"
+            android:textColor="@color/black"
             android:layout_below="@+id/idIVNews">
 
         </TextView>
@@ -47,7 +47,7 @@
             android:maxLines="3"
             android:padding="5dp"
             android:text="News Subheading"
-            android:textColor="@color/teal_700"
+            android:textColor="@color/black"
             android:textSize="15dp">
 
         </TextView>

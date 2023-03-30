@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vintage2">
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Article 17"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="\t•	Everyone has the right to own property alone as well as in association with others\n\n.
+\t•	No one shall be arbitrarily deprived of their property.\n\n
+\t•	Property rights shall be protected by law.\n\n
+\t•	No one shall be deprived of their property except when it is necessary for public use and provided that they receive just and fair compensation.\n\n
+\t•	The right to own property may be subject to limitations necessary for the general welfare or in order to secure the payment of taxes or other contributions or penalties.\n\n
+
+"
+        android:textSize="19sp"/>
+</FrameLayout>

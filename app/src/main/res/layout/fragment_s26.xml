@@ -3,12 +3,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".s26">
-
+    android:background="@drawable/vintage2">
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Article 26"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="\t• 	Everyone has the right to education, which shall be directed to the full development of the human personality and to the strengthening of respect for human rights and fundamental freedoms.\n\n
+\t• 	Education shall be free, at least in the elementary and fundamental stages.\n\n
+\t• 	Education shall be compulsory and available to all.\n\n
+\t• 	Higher education shall be equally accessible to all on the basis of merit.\n\n
+\t• 	Education shall promote understanding, tolerance, and friendship among all nations, racial or religious groups, and shall further the activities of the United Nations for the maintenance of peace.\n\n
+
+"
+        android:textSize="19sp"/>
 </FrameLayout>
