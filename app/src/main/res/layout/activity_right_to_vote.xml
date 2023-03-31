@@ -58,7 +58,10 @@
             android:layout_marginTop="6dp"
             android:layout_marginLeft="6dp"
             android:layout_marginRight="6dp"
-            android:text="\t1. The right to equality ensures that all individuals are treated equally under the law, without discrimination or prejudice.\n\n\t2. Discrimination on any ground, such as race, gender, religion, and sexual orientation, is strictly prohibited under the right to equality.\n\n\t3. The right to equality is essential to promote social justice, eliminate poverty, and advance sustainable development.\n\n\t4. The right to equality includes access to education, healthcare, employment, and other essential services without discrimination.\n\n\t5. The right to equality is protected by international and national laws and institutions, including courts and human rights bodies.\n"
+            android:text="\t1. The right to vote is a fundamental human right that enables citizens to participate in the democratic process by selecting their representatives and shaping government policies.\n\n
+\t2.In many countries, the right to vote has been restricted or denied to certain groups based on factors such as gender, race, ethnicity.\n\n
+\t3.Universal suffrage, which guarantees the right to vote to all adult citizens regardless of their background or identity, is an essential aspect of a functioning democracy.\n\n
+\t4.Ensuring that everyone has equal access to the right to vote requires efforts to eliminate barriers such as voter suppression, discriminatory voter ID laws, and unequal access to polling stations.\n\n"
             android:textSize="19sp">
 
 

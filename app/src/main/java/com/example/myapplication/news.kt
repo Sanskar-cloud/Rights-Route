@@ -72,7 +72,8 @@ class news : AppCompatActivity(), CategoryRVAdapter.CategoryClickInterface {
 
         val CategoryUrl =
 
-           "https://newsapi.org/v2/everything?q=fundamental+rights+india+and+supreme+court&from=2023-02-28&sortBy=publishedAt&apiKey=80e71f59294440f5bbbf0abe3be8abf0"
+            "https://newsapi.org/v2/everything?q=fundamental+rights+india+and+supreme+court&from=2023-02-28&sortBy=publishedAt&apiKey=80e71f59294440f5bbbf0abe3be8abf0"
+        ////
 
 
 

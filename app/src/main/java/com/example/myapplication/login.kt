@@ -48,12 +48,13 @@ class login : AppCompatActivity() {
                         if (it.isSuccessful) {
                             val intent = Intent(this, MainActivity::class.java)
                             startActivity(intent)
+                            Toast.makeText(this, "Welcome to Home Page", Toast.LENGTH_SHORT).show()
                         } else {
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
 
                         }
 
-                        Toast.makeText(this, "Welcome to Home Page", Toast.LENGTH_SHORT).show()
+
                     }
                 } else {
                     Toast.makeText(this, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT).show()

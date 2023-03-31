@@ -10,7 +10,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.example.myapplication.R
 import com.squareup.picasso.Picasso
 
 class NewsDetailActivity : AppCompatActivity() {
@@ -50,11 +49,15 @@ class NewsDetailActivity : AppCompatActivity() {
         Content.text = content
         subdesc.text = desc
         Picasso.get().load(imageURL).into(newsIV)
+
+
+        val button = findViewById<Button>(R.id.btnnews)
+        button.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+            startActivity(intent)
+        }
+
     }
 
-    fun read(view: View) {
-        val i = Intent(Intent.ACTION_VIEW)
-        i.data = Uri.parse(url)
-        startActivity(i)
-    }
+
 }

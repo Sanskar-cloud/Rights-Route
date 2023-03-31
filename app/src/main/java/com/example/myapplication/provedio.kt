@@ -32,7 +32,7 @@ class provedio : AppCompatActivity() {
         webView.webViewClient = WebViewClient()
 
         // this will load the url of the website
-        webView.loadUrl("https://www.youtube.com/watch?v=eZWN-bB5Of4&t=81s")
+        webView.loadUrl("https://www.youtube.com/watch?v=eZWN-bB5Of4&t=97s")
 
         // this will enable the javascript settings, it can also allow xss vulnerabilities
         webView.settings.javaScriptEnabled = true

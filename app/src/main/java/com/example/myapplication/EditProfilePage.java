@@ -168,7 +168,9 @@ public class EditProfilePage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(EditProfilePage.this, "Signing You Out", Toast.LENGTH_SHORT).show();
-                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(EditProfilePage.this, login.class);
+                startActivity(intent);
+
             }
         });
 

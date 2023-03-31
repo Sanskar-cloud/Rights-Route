@@ -99,6 +99,7 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/cardgradient"
         android:textColor="@color/white"
+        android:onClick="Read"
         >
     </Button>
 </RelativeLayout>
