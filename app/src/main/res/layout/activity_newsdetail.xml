@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/vintage"
     android:onClick="read"
-    tools:context=".NewsDetailActivity">
+    tools:context=".view.activities.news.NewsDetailActivity">
 
     <ScrollView
         android:layout_width="match_parent"

@@ -9,6 +9,15 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
+import com.example.myapplication.view.activities.exploitation.Righttoexpolio
+import com.example.myapplication.view.activities.freedom.RightTofreedom2
+import com.example.myapplication.view.activities.educational.Rightreligion1
+import com.example.myapplication.view.activities.news.news
+import com.example.myapplication.view.activities.religion.Righttofreess
+import com.example.myapplication.view.activities.remedies.Rightconsremedy1
+import com.example.myapplication.view.activities.righttoequality.RighttoEquality1
+import com.example.myapplication.view.activities.violation.Voilation
+import com.example.myapplication.view.activities.vote.RightToVote
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import java.util.*

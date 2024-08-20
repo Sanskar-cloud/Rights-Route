@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/vintage"
-    tools:context=".news">
+    tools:context=".view.activities.news.news">
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
